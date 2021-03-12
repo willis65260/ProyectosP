@@ -1,0 +1,23 @@
+/* :root{ */
+    /* font-size: 1rem; */
+/* } */
+
+.hr_blanco{
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.vh_vw_100{
+    width: 100vw;
+    height: 100vh;
+}
+
+.max_width{
+    width: 30rem;
+}
+
+
+@media (max-width: 800px) {
+    .max_width{
+        width: 20rem;
+    }
+}
