@@ -5,7 +5,7 @@ import Login from './Login'
 import VideoTuto from './VideoTuto'
 
 
-import '../../CSS/Bootstrap/css/bootstrap.css'
+import '../../CSS/Bootstrap/css/bootstrapD.css'
 import Noticias from './Noticias';
 
 //generamos nuestra funcion para realizar el despliegue

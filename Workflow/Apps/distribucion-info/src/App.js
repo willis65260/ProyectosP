@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Banner from './Componentes/Banner/Banner'
 import Cuerpo from './Componentes/Cuerpo/Cuerpo'
+import Pagina1 from './Componentes/Paginas/Pagina1'
 import PieDePagina from './Componentes/Footer/PiePagina';
 import ReactDOM from 'react-dom';
 import './CSS/Bootstrap/css/bootstrapD.css'
@@ -22,7 +23,7 @@ function App() {
     return [value, setValue];
   }
 
-  const [Elem, setElem] = useState(<Banner />);
+  const [Elem, setElem] = useState(<Pagina1 />);
   // const [cont, setCont] = useStickyState(0, "cont");
   const [cont, setCont] = useState(0);
 
@@ -33,7 +34,7 @@ function App() {
     console.log(btnEle)
     if (btnEle == 1) {
       // TODO Actualiza el Dom al modificar el estado del elemento
-      setElem(<Banner />)
+      setElem(<Pagina1 />)
     }
     if (btnEle == 2) {
       // TODO Actualiza el Dom al modificar el estado del elemento
@@ -44,10 +45,6 @@ function App() {
 
   return (
     <>
-      <div class="">
-        
-        
-      </div>
 
       <div className="App">
       <div class="d-flex" >
