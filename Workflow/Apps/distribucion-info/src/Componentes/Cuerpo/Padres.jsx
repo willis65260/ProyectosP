@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 
 //generamos nuestra funcion para realizar el despliegue
 
-function RedesSociales() {
+function Padres() {
     return(
-        <h5>Redes Sociales</h5>
+        <h5>Padres</h5>
     )
 }
 
-export default RedesSociales
+export default Padres
+

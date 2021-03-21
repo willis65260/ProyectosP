@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 
 function informacion() {
     return(
-        <h5>informacion para personas</h5>
+        <h5>informacion para alumnos</h5>
     )
 }
 

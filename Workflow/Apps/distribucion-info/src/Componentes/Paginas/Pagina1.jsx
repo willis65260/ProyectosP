@@ -8,9 +8,6 @@ import InofrmacionVaria from '../Cuerpo/Informacion-varia';
 import Calendario from '../Cuerpo/Calendario';
 
 import DerechosDeAutor from '../Footer/DerechosDeAutor';
-import GeneralesDeLaEmpresa from '../Footer/GeneralesDeLaEmpresa';
-import Inicio from '../Footer/inicio';
-import RedesSociales from '../Footer/RedesSociales';
 import MapaPagina from '../Cuerpo/MapaPagina';
 import Logo from '../Banner/Logo';
 import Contacto from '../Cuerpo/Contacto';

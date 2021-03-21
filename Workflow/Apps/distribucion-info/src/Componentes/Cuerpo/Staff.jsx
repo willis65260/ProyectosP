@@ -1,12 +1,13 @@
 import React from 'react';
 
+
 //generamos nuestra funcion para realizar el despliegue
 
-function investigaciones() {
+function Staff() {
     return(
-        <h5>investigaciones</h5>
+        <h5>Staff</h5>
     )
 }
 
-export default investigaciones
+export default Staff
 

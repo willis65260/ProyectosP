@@ -1,44 +1,50 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Banner from './Componentes/Banner/Banner'
-import Cuerpo from './Componentes/Cuerpo/Cuerpo'
 import Pagina1 from './Componentes/Paginas/Pagina1'
-import PieDePagina from './Componentes/Footer/PiePagina';
-import ReactDOM from 'react-dom';
+import Pagina2 from './Componentes/Paginas/Pagina2'
 import './CSS/Bootstrap/css/bootstrapD.css'
+import Pagina3 from './Componentes/Paginas/Pagina3';
 
 function App() {
 
-  function useStickyState(defaultValue, key) {
-    const [value, setValue] = React.useState(() => {
-      const stickyValue = window.localStorage.getItem(key);
-      return stickyValue !== null
-        ? JSON.parse(stickyValue)
-        : defaultValue;
-    });
-    React.useEffect(() => {
-      window.localStorage.setItem(key, JSON.stringify(value));
-    }, [key, value]);
-    return [value, setValue];
-  }
+  //TODO esto es para hacer que un valor se mantenga en los cookies 
+  //TODO de la pagina aunque esta se recargue o se cierre
+  //TODO de aqui
+  
+  // function useStickyState(defaultValue, key) {
+  //   const [value, setValue] = React.useState(() => {
+  //     const stickyValue = window.localStorage.getItem(key);
+  //     return stickyValue !== null
+  //       ? JSON.parse(stickyValue)
+  //       : defaultValue;
+  //   });
+  //   React.useEffect(() => {
+  //     window.localStorage.setItem(key, JSON.stringify(value));
+  //   }, [key, value]);
+  //   return [value, setValue];
+  // }
+//TODO hata aqui
 
   const [Elem, setElem] = useState(<Pagina1 />);
   // const [cont, setCont] = useStickyState(0, "cont");
-  const [cont, setCont] = useState(0);
+  // const [cont, setCont] = useState(0);
 
   //! hay que tener cuidado con esto porque guarda en memoria
   //const [cont, setCont] = useStickyState(0, "cont");
   // var elem = 
   function CualBotonSePresionoBtnClick(btnEle) {
     console.log(btnEle)
-    if (btnEle == 1) {
+    if (btnEle === 1) {
       // TODO Actualiza el Dom al modificar el estado del elemento
       setElem(<Pagina1 />)
     }
-    if (btnEle == 2) {
+    else if (btnEle === 2) {
       // TODO Actualiza el Dom al modificar el estado del elemento
-      setElem(<Cuerpo />)
+      setElem(<Pagina2 />)
+    }
+    else if (btnEle === 3) {
+      // TODO Actualiza el Dom al modificar el estado del elemento
+      setElem(<Pagina3 />)
     }
   }
 
