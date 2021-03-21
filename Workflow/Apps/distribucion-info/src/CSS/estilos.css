@@ -1,0 +1,62 @@
+.fondo-blanco {
+    background-color: white;
+    color: black;
+}
+
+.imagenes-padre {
+    position: relative;
+    overflow: hidden;
+}
+
+.imagen-hija {
+    position: relative;
+    left: -50px;
+    top: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+.tamano-buscar {
+    width: 527px;
+}
+
+.ta {
+    height: 35px;
+}
+
+.aux {
+    display: flex;
+    border: 1px solid #DDD;
+    border-radius: 20%;
+    border-radius: 2rem;
+    /* height: 30px; */
+}
+
+.background-tenue{
+    border: none;
+    background-color: #f8f9fa;
+}
+.linea{
+    position: relative;
+    display: inline-block;
+}
+.link{
+    color:blue;
+    cursor: pointer;
+}
+.link:hover{
+    text-decoration: underline;
+}
+
+.mex{
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dadce0;
+    color: #7686a2;
+}
+
+.decorado{
+    cursor: pointer;
+}
+.decorado:hover{
+    text-decoration: underline;
+}

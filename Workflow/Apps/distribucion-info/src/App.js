@@ -4,13 +4,16 @@ import Pagina1 from './Componentes/Paginas/Pagina1'
 import Pagina2 from './Componentes/Paginas/Pagina2'
 import './CSS/Bootstrap/css/bootstrapD.css'
 import Pagina3 from './Componentes/Paginas/Pagina3';
+import Pagina4 from './Componentes/Paginas/Pagina4';
+import Pagina5 from './Componentes/Paginas/Pagina5';
+import Google from './Componentes/Paginas/Google';
 
 function App() {
 
   //TODO esto es para hacer que un valor se mantenga en los cookies 
   //TODO de la pagina aunque esta se recargue o se cierre
   //TODO de aqui
-  
+
   // function useStickyState(defaultValue, key) {
   //   const [value, setValue] = React.useState(() => {
   //     const stickyValue = window.localStorage.getItem(key);
@@ -23,9 +26,9 @@ function App() {
   //   }, [key, value]);
   //   return [value, setValue];
   // }
-//TODO hata aqui
+  //TODO hata aqui
 
-  const [Elem, setElem] = useState(<Pagina1 />);
+  const [Elem, setElem] = useState(<Google />);
   // const [cont, setCont] = useStickyState(0, "cont");
   // const [cont, setCont] = useState(0);
 
@@ -45,6 +48,16 @@ function App() {
     else if (btnEle === 3) {
       // TODO Actualiza el Dom al modificar el estado del elemento
       setElem(<Pagina3 />)
+    } else if (btnEle === 4) {
+      // TODO Actualiza el Dom al modificar el estado del elemento
+      setElem(<Pagina4 />)
+    } else if (btnEle === 5) {
+      // TODO Actualiza el Dom al modificar el estado del elemento
+      setElem(<Pagina5 />)
+    }
+    else if (btnEle === 6) {
+      // TODO Actualiza el Dom al modificar el estado del elemento
+      setElem(<Google />)
     }
   }
 
@@ -53,25 +66,25 @@ function App() {
     <>
 
       <div className="App">
-      <div class="d-flex" >
-        <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina1" onClick={() => CualBotonSePresionoBtnClick(1)} /></div>
-        <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina2" onClick={() => CualBotonSePresionoBtnClick(2)} /></div>
-        <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina3" onClick={() => CualBotonSePresionoBtnClick(3)} /></div>
-        <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina4" onClick={() => CualBotonSePresionoBtnClick(4)} /></div>
-        <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina5" onClick={() => CualBotonSePresionoBtnClick(5)} /></div>
-        <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina6" onClick={() => CualBotonSePresionoBtnClick(6)} /></div>
-        <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina7" onClick={() => CualBotonSePresionoBtnClick(7)} /></div>
-        <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina8" onClick={() => CualBotonSePresionoBtnClick(8)} /></div>
+        <div class="d-flex" >
+          <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina1" onClick={() => CualBotonSePresionoBtnClick(1)} /></div>
+          <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina2" onClick={() => CualBotonSePresionoBtnClick(2)} /></div>
+          <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina3" onClick={() => CualBotonSePresionoBtnClick(3)} /></div>
+          <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina4" onClick={() => CualBotonSePresionoBtnClick(4)} /></div>
+          <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina5" onClick={() => CualBotonSePresionoBtnClick(5)} /></div>
+          <div class="mx-auto"><input type="button" class="btn btn-danger my-1" value="Google" onClick={() => CualBotonSePresionoBtnClick(6)} /></div>
+          <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina7" onClick={() => CualBotonSePresionoBtnClick(7)} /></div>
+          <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina8" onClick={() => CualBotonSePresionoBtnClick(8)} /></div>
         </div>
         <div class="d-flex" >
-        <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina9" onClick={() => CualBotonSePresionoBtnClick(9)} /></div>
-        <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina10" onClick={() => CualBotonSePresionoBtnClick(10)} /></div>
-        <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina11" onClick={() => CualBotonSePresionoBtnClick(11)} /></div>
-        <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina12" onClick={() => CualBotonSePresionoBtnClick(12)} /></div>
-        <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina13" onClick={() => CualBotonSePresionoBtnClick(13)} /></div>
-        <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina14" onClick={() => CualBotonSePresionoBtnClick(14)} /></div>
-        <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina15" onClick={() => CualBotonSePresionoBtnClick(15)} /></div>
-        <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina16" onClick={() => CualBotonSePresionoBtnClick(16)} /></div>
+          <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina9" onClick={() => CualBotonSePresionoBtnClick(9)} /></div>
+          <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina10" onClick={() => CualBotonSePresionoBtnClick(10)} /></div>
+          <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina11" onClick={() => CualBotonSePresionoBtnClick(11)} /></div>
+          <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina12" onClick={() => CualBotonSePresionoBtnClick(12)} /></div>
+          <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina13" onClick={() => CualBotonSePresionoBtnClick(13)} /></div>
+          <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina14" onClick={() => CualBotonSePresionoBtnClick(14)} /></div>
+          <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina15" onClick={() => CualBotonSePresionoBtnClick(15)} /></div>
+          <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina16" onClick={() => CualBotonSePresionoBtnClick(16)} /></div>
         </div>
         {Elem}
 
