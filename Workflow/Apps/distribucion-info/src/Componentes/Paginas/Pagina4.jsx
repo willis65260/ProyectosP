@@ -25,7 +25,6 @@ import Negocio from '../Cuerpo/Negocio';
 import Politicas from '../Cuerpo/Politicas';
 import Ubicacion from '../Cuerpo/Ubicacion';
 
-//generamos nuestra funcion para realizar el despliegue
 
 function Pagina4() {
     return (

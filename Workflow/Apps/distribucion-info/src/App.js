@@ -7,6 +7,16 @@ import Pagina3 from './Componentes/Paginas/Pagina3';
 import Pagina4 from './Componentes/Paginas/Pagina4';
 import Pagina5 from './Componentes/Paginas/Pagina5';
 import Google from './Componentes/Paginas/Google';
+import Pagina7 from './Componentes/Paginas/Pagina7';
+import Pagina8 from './Componentes/Paginas/Pagina8';
+import Pagina9 from './Componentes/Paginas/Pagina9';
+import Pagina10 from './Componentes/Paginas/Pagina10';
+import Pagina11 from './Componentes/Paginas/Pagina11';
+import Pagina12 from './Componentes/Paginas/Pagina12';
+import Pagina13 from './Componentes/Paginas/Pagina13';
+import Pagina14 from './Componentes/Paginas/Pagina14';
+import Pagina15 from './Componentes/Paginas/Pregunta15';
+// import Pagina16 from './Componentes/Paginas/Pagina16';
 
 function App() {
 
@@ -54,11 +64,41 @@ function App() {
     } else if (btnEle === 5) {
       // TODO Actualiza el Dom al modificar el estado del elemento
       setElem(<Pagina5 />)
-    }
-    else if (btnEle === 6) {
+    }else if (btnEle === 6) {
       // TODO Actualiza el Dom al modificar el estado del elemento
       setElem(<Google />)
+    }else if (btnEle === 7) {
+      // TODO Actualiza el Dom al modificar el estado del elemento
+      setElem(<Pagina7 />)
+    }else if (btnEle === 8) {
+      // TODO Actualiza el Dom al modificar el estado del elemento
+      setElem(<Pagina8 />)
+    }else if (btnEle === 9) {
+      // TODO Actualiza el Dom al modificar el estado del elemento
+      setElem(<Pagina9 />)
+    }else if (btnEle === 10) {
+      // TODO Actualiza el Dom al modificar el estado del elemento
+      setElem(<Pagina10 />)
+    }else if (btnEle === 11) {
+      // TODO Actualiza el Dom al modificar el estado del elemento
+      setElem(<Pagina11 />)
+    }else if (btnEle === 12) {
+      // TODO Actualiza el Dom al modificar el estado del elemento
+      setElem(<Pagina12 />)
+    }else if (btnEle === 13) {
+      // TODO Actualiza el Dom al modificar el estado del elemento
+      setElem(<Pagina13 />)
+    }else if (btnEle === 14) {
+      // TODO Actualiza el Dom al modificar el estado del elemento
+      setElem(<Pagina14 />)
+    }else if (btnEle === 15) {
+      // TODO Actualiza el Dom al modificar el estado del elemento
+      setElem(<Pagina15 />)
     }
+    // else if (btnEle === 16) {
+    //   // TODO Actualiza el Dom al modificar el estado del elemento
+    //   setElem(<Pagina16 />)
+    // }
   }
 
 

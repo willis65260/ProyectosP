@@ -3,29 +3,7 @@ import React from 'react';
 
 import '../../CSS/Bootstrap/css/bootstrapD.css'
 
-import InofrmacionVaria from '../Cuerpo/Informacion-varia';
 
-
-import Logo from '../Banner/Logo';
-import Contacto from '../Cuerpo/Contacto';
-
-
-import Buscar from '../header/buscar';
-
-import Covid from '../header/covid-info';
-import DerechosDeAutor from '../Footer/DerechosDeAutor';
-import Calendario from '../Cuerpo/Calendario';
-import LinksVarios from '../Cuerpo/LinksVarios';
-
-import Info from '../Cuerpo/Info'
-
-import Academia from '../header-posterior/academia';
-import Admisiones from '../header-posterior/admisiones';
-import Conoce from '../header-posterior/conoce';
-import Online from '../Cuerpo/Online';
-import Explora from '../Cuerpo/Explora';
-import Noticias from '../header/Noticias';
-import MapaPagina from '../Cuerpo/MapaPagina';
 import Gmail from '../Google/Gmail';
 import CuentaGoogle from '../Google/CuentaGoogle'
 import GoogleApps from '../Google/GoogleApps'

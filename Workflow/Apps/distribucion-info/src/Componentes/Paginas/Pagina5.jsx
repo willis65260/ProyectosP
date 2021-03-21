@@ -28,7 +28,6 @@ import Noticias from '../header/Noticias';
 import MapaPagina from '../Cuerpo/MapaPagina';
 
 
-//generamos nuestra funcion para realizar el despliegue
 
 function Pagina5() {
     return (

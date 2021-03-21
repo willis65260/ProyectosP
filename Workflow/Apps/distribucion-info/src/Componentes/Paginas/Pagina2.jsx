@@ -23,7 +23,6 @@ import Work from '../header/work';
 import Staff from '../Cuerpo/Staff';
 
 
-//generamos nuestra funcion para realizar el despliegue
 
 function Pagina2() {
     return (

@@ -13,7 +13,7 @@ import Logo from '../Banner/Logo';
 import Contacto from '../Cuerpo/Contacto';
 
 
-//generamos nuestra funcion para realizar el despliegue
+
 
 function Pagina1() {
     return (

@@ -19,7 +19,6 @@ import Aplicar from '../Cuerpo/Aplicar';
 import DerechosDeAutor from '../Footer/DerechosDeAutor';
 
 
-//generamos nuestra funcion para realizar el despliegue
 
 function Pagina3() {
     return (
