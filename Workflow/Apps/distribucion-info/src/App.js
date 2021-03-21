@@ -16,7 +16,9 @@ import Pagina12 from './Componentes/Paginas/Pagina12';
 import Pagina13 from './Componentes/Paginas/Pagina13';
 import Pagina14 from './Componentes/Paginas/Pagina14';
 import Pagina15 from './Componentes/Paginas/Pregunta15';
-// import Pagina16 from './Componentes/Paginas/Pagina16';
+import Pagina16 from './Componentes/Paginas/Pagina16';
+import Pagina17 from './Componentes/Paginas/Pagina17';
+import Pagina18 from './Componentes/Paginas/Pagina18';
 
 function App() {
 
@@ -94,11 +96,16 @@ function App() {
     }else if (btnEle === 15) {
       // TODO Actualiza el Dom al modificar el estado del elemento
       setElem(<Pagina15 />)
+    }else if (btnEle === 16) {
+      // TODO Actualiza el Dom al modificar el estado del elemento
+      setElem(<Pagina16 />)
+    }else if (btnEle === 17) {
+      // TODO Actualiza el Dom al modificar el estado del elemento
+      setElem(<Pagina17 />)
+    }else if (btnEle === 18) {
+      // TODO Actualiza el Dom al modificar el estado del elemento
+      setElem(<Pagina18 />)
     }
-    // else if (btnEle === 16) {
-    //   // TODO Actualiza el Dom al modificar el estado del elemento
-    //   setElem(<Pagina16 />)
-    // }
   }
 
 
@@ -125,6 +132,10 @@ function App() {
           <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina14" onClick={() => CualBotonSePresionoBtnClick(14)} /></div>
           <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina15" onClick={() => CualBotonSePresionoBtnClick(15)} /></div>
           <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina16" onClick={() => CualBotonSePresionoBtnClick(16)} /></div>
+        </div>
+        <div class="d-flex" >
+          <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina17" onClick={() => CualBotonSePresionoBtnClick(17)} /></div>
+          <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina18" onClick={() => CualBotonSePresionoBtnClick(18)} /></div>
         </div>
         {Elem}
 

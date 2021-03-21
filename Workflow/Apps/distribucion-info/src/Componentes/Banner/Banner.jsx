@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import BreadCum from './BreadCum'
 import HoraFecha from './HoraFecha'
 import Logo from './Logo'
