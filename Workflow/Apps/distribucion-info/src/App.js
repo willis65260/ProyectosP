@@ -114,7 +114,7 @@ function App() {
 
       <div className="App">
         <div class="d-flex" >
-          <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina1" onClick={() => CualBotonSePresionoBtnClick(1)} /></div>
+          <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Boton 1" onClick={() => CualBotonSePresionoBtnClick(1)} /></div>
           <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina2" onClick={() => CualBotonSePresionoBtnClick(2)} /></div>
           <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina3" onClick={() => CualBotonSePresionoBtnClick(3)} /></div>
           <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina4" onClick={() => CualBotonSePresionoBtnClick(4)} /></div>
