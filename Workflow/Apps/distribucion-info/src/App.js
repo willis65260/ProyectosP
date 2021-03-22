@@ -40,7 +40,7 @@ function App() {
   // }
   //TODO hata aqui
 
-  const [Elem, setElem] = useState(<Google />);
+  const [Elem, setElem] = useState(<Pagina1 />);
   // const [cont, setCont] = useStickyState(0, "cont");
   // const [cont, setCont] = useState(0);
 
@@ -119,7 +119,7 @@ function App() {
           <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina3" onClick={() => CualBotonSePresionoBtnClick(3)} /></div>
           <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina4" onClick={() => CualBotonSePresionoBtnClick(4)} /></div>
           <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina5" onClick={() => CualBotonSePresionoBtnClick(5)} /></div>
-          <div class="mx-auto"><input type="button" class="btn btn-danger my-1" value="Google" onClick={() => CualBotonSePresionoBtnClick(6)} /></div>
+          <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina6" onClick={() => CualBotonSePresionoBtnClick(6)} /></div>
           <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina7" onClick={() => CualBotonSePresionoBtnClick(7)} /></div>
           <div class="mx-auto"><input type="button" class="btn btn-info my-1" value="Pagina8" onClick={() => CualBotonSePresionoBtnClick(8)} /></div>
         </div>
