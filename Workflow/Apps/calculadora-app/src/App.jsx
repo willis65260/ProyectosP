@@ -1,18 +1,21 @@
 import React from 'react'
-import logo from './logo.svg';
 // import './App.css';
-import Hola from './components/Hola'
-import Bread from './components/Bread';
 import './Estilos/calc.css'
 import Result from './components/Result';
+import Button from './components/Button';
 
 function App() {
+
+  const clickHandlerFuntion = (text)=>{
+    console.log("el rexto recibido es :",text);
+  }
+
   return (
     <main>
       <div className="react-calculator">
-        <Result/>
+        <Result value={undefined}/>
         <div className="numbers">
-          <button>1</button>
+          <Button text={"1"} clickHandler={clickHandlerFuntion}/>
           <button>2</button>
           <button>3</button>
           <button>4</button>
@@ -23,10 +26,6 @@ function App() {
           <button>9</button>
           <button>0</button>
         </div>
-        <div className="functions">
-          <button>clear</button>
-          <button>r</button>
-        </div>
         <div className="math-operations">
           <button>-</button>
           <button>+</button>
@@ -34,6 +33,11 @@ function App() {
           <button>/</button>
           <button>=</button>
         </div>
+        <div className="functions">
+          <button>clear</button>
+          <button>r</button>
+        </div>
+        
       </div>
     </main>
   );
