@@ -6,7 +6,7 @@ import './CSS/Bootstrap/css/bootstrapD.css'
 import Pagina3 from './Componentes/Paginas/Pagina3';
 import Pagina4 from './Componentes/Paginas/Pagina4';
 import Pagina5 from './Componentes/Paginas/Pagina5';
-import Google from './Componentes/Paginas/Google';
+// import Google from './Componentes/Paginas/Google';
 import Pagina7 from './Componentes/Paginas/Pagina7';
 import Pagina8 from './Componentes/Paginas/Pagina8';
 import Pagina9 from './Componentes/Paginas/Pagina9';
@@ -68,7 +68,7 @@ function App() {
       setElem(<Pagina5 />)
     }else if (btnEle === 6) {
       // TODO Actualiza el Dom al modificar el estado del elemento
-      setElem(<Google />)
+      // setElem(<Google />)
     }else if (btnEle === 7) {
       // TODO Actualiza el Dom al modificar el estado del elemento
       setElem(<Pagina7 />)
