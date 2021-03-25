@@ -35,9 +35,11 @@ function Cuerpo() {
                     <Acceso /><Informacion />
                     <VideoTuto />
                     <div class='d-flex'>
+
                         <div class='mx-auto'><Logo /> </div>
                         <div class='mx-auto'><InformacionVaria /> </div>
                         <div class='mx-auto'><VideoTuto /> </div>
+
                     </div>
                     
                 </div>
