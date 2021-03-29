@@ -17,6 +17,8 @@ function App() {
   function clickHandlerFuntion (text) {
     console.log("Se ha actualizado el usuario");
     setElem(<DatosUsuario usuario={text} imagen={"no hay imagen"} fotografia={"no hay fotografia"} documento={"no hay documento"} />)
+    
+
   }
 
   return (
@@ -33,8 +35,6 @@ function App() {
           {Elem}
         </div>
       </div>
-
-
     </div>
   );
 }
