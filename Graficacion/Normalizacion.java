@@ -1,4 +1,4 @@
-package Graficacion;
+// package Graficacion;
 
 import java.applet.*;
 import java.awt.*;

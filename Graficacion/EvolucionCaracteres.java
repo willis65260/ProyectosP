@@ -1,4 +1,4 @@
-package Graficacion;
+// package Graficacion;
 import java.awt.*;
 import javax.swing.*;
 @SuppressWarnings("serial")
