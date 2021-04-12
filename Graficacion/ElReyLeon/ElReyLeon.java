@@ -25,41 +25,57 @@ public class ElReyLeon extends JPanel implements ActionListener {
     Jugador Simba, Pumba;
     boolean OdioLasBanderas;
     JFrame ventana_anterior;
+    JButton imagen_jugador1;
+    JButton imagen_jugador2;
 
     public ElReyLeon(int numero_jugadores, JFrame ventana_anterior) {
         this.ventana_anterior = ventana_anterior;
         this.numero_jugadores = numero_jugadores;
         OdioLasBanderas = true;
         construirTablero();
-
         Simba = new Jugador(vEti, T, bDado, 0, "Simba", V, ventana_anterior);
-        if (numero_jugadores != 1)
-            Pumba = new Jugador(vEti, T, bDado, 2, "Pumba", V, ventana_anterior);
 
+        imagen_jugador1 = new JButton();
+        imagen_jugador1.setIcon(Simba.figura);
+        panelDado.add(imagen_jugador1);
+        if (numero_jugadores != 1) {
+            Pumba = new Jugador(vEti, T, bDado, 2, "Pumba", V, ventana_anterior);
+            imagen_jugador2 = new JButton();
+            imagen_jugador2.setIcon(Pumba.figura);
+            imagen_jugador2.setEnabled(false);
+            panelDado.add(imagen_jugador2);
+
+        }
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        System.out.println("botones " + numero_jugadores);
         if (numero_jugadores == 1) {
             Simba.AgregarMovimiento(TirarDado());
             Simba.MoverJugador();
         } else {
+            System.out.println("entro al else ");
+
             if (OdioLasBanderas) {
-                if (Simba.cazzu) {
+                if (!Simba.cazzu) {
                     Simba.AgregarMovimiento(TirarDado());
                     Simba.MoverJugador();
+                    imagen_jugador2.setEnabled(true);
+                    imagen_jugador1.setEnabled(false);
                 } else {
                     Simba.cazzu = false;
                 }
                 OdioLasBanderas = false;
             } else {
-                if (Pumba.cazzu) {
+                if (!Pumba.cazzu) {
                     Pumba.AgregarMovimiento(TirarDado());
                     Pumba.MoverJugador();
+                    imagen_jugador1.setEnabled(true);
+                    imagen_jugador2.setEnabled(false);
                 } else {
                     Pumba.cazzu = false;
                 }
-
                 OdioLasBanderas = true;
             }
         }
@@ -78,7 +94,7 @@ public class ElReyLeon extends JPanel implements ActionListener {
 
     public void construirTablero() {
         OdioLasBanderas = true;
-        V = new JFrame("Serpientes y escaleras versi�n El Rey Le�n");
+        V = new JFrame("Serpientes y escaleras version El Rey Leon");
         V.setSize(900, 700);
         V.setLocationRelativeTo(this);
         setSize(900, 700);
@@ -102,13 +118,16 @@ public class ElReyLeon extends JPanel implements ActionListener {
         imgTablero = new ImageIcon(ruta).getImage();
         V.add(this, BorderLayout.CENTER);
         panelDado = new JPanel();
+        panelDado.setLayout(new GridLayout(3, 1));
         ruta = getClass().getResource("../Recursos/dadochido.gif");
         imgDado = new ImageIcon(ruta);
         bDado = new JButton(imgDado);
         bDado.setOpaque(false);
         bDado.setContentAreaFilled(false);
         bDado.setBorderPainted(false);
+
         panelDado.add(bDado);
+
         V.add(panelDado, BorderLayout.WEST);
         // evento del boton
         bDado.addActionListener(this);
@@ -116,6 +135,13 @@ public class ElReyLeon extends JPanel implements ActionListener {
         V.setVisible(true);
         V.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
+        V.addWindowListener(new java.awt.event.WindowAdapter() {
+            @Override
+            public void windowClosed(java.awt.event.WindowEvent windowEvent) {
+                ventana_anterior.setVisible(true);
+            }
+        });
+        
         V.addWindowFocusListener(new WindowFocusListener() {
             @Override
             public void windowLostFocus(WindowEvent e) {

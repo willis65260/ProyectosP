@@ -51,11 +51,6 @@ function Pagina3() {
                 <div className="mx-auto"><RedesSociales /></div>
             </div>
 
-            {/* <div class='mx-auto'><BreadCum></BreadCum></div>
-            <div class='mx-auto'><HoraFecha></HoraFecha></div>
-            <div class='mx-auto'><Logo></Logo></div>
-            <div class='mx-auto'><PaletaColores></PaletaColores></div> */}
-
         </div>
 
     )

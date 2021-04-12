@@ -38,9 +38,9 @@ public class Ayuda implements ActionListener {
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 509, 334);
-		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);// cambiar par que no se salga del rpograma
+		frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);// cambiar par que no se salga del rpograma
 		frame.getContentPane().setLayout(null);
-
+frame.setLocationRelativeTo(null);
 		JLabel lblAyuda = new JLabel("AYUDA");
 		lblAyuda.setFont(new Font("Tahoma", Font.BOLD, 20));
 		lblAyuda.setBounds(107, 11, 71, 29);
@@ -51,8 +51,8 @@ public class Ayuda implements ActionListener {
 		txtrAyudaASimba.setText("Ayuda  a  Simba, a  Pumba o a ambos\n" + "a poder  enfrentar a  Scar  para  poder\n"
 				+ "liberar el reino, pero ten cuidado con\n" + "encontrarte con las hienas, puede que\n"
 				+ "te ahuyenten y te hagan regresar, por\n" + "otro lado, procura los bichos viscosos \n"
-				+ "y  sabrosos,  te  dar�n  energ�a  para\n" + "avanzar m�s. Tambi�n ten cuidado con\n"
-				+ "Cazz�, te dar� un rega�o y as� perder�s\n" + "un turno.");
+				+ "y  sabrosos,  te  daran  energia  para\n" + "avanzar mas. Tambien ten cuidado con\n"
+				+ "Cazzu, te dara un regaño y asi perderas\n" + "un turno.");
 		txtrAyudaASimba.setBounds(33, 51, 224, 161);
 		frame.getContentPane().add(txtrAyudaASimba);
 

@@ -15,7 +15,9 @@ import java.awt.Color;
 import java.awt.Font;
 import javax.swing.ImageIcon;
 
-public class Prueba implements ActionListener {
+//$ Entregar el archivo .jar
+//$ Fuentes, imagenes, .java y .class
+public class Principal implements ActionListener {
 	JButton btnNewButton, btnJugadores, btnSalir, btnAyuda, btnInstrucciones;
 
 	private JFrame frame;
@@ -46,7 +48,7 @@ public class Prueba implements ActionListener {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Prueba window = new Prueba();
+					Principal window = new Principal();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -58,7 +60,7 @@ public class Prueba implements ActionListener {
 	/**
 	 * Create the application.
 	 */
-	public Prueba() {
+	public Principal() {
 		initialize();
 	}
 
@@ -117,7 +119,7 @@ public class Prueba implements ActionListener {
 		frame.getContentPane().add(lblNewLabel);
 
 		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon(Prueba.class.getResource("../Recursos/menu.png")));
+		lblNewLabel_1.setIcon(new ImageIcon(Principal.class.getResource("../Recursos/menu.png")));
 		lblNewLabel_1.setBounds(0, 0, 493, 290);
 		frame.getContentPane().add(lblNewLabel_1);
 	}

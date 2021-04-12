@@ -132,6 +132,7 @@ class Jugador {
 		posicion = 1;
 		movimientos = new LinkedList<Integer>();
 		ruta = getClass().getResource("../Recursos/" + nombre + "D.gif");
+		figura = new ImageIcon(ruta);
 		SetImageJugador();
 	}
 
@@ -180,7 +181,7 @@ class Jugador {
 
 		// System.out.println("Algo salio mal");
 		vEti[T[posicion].getRenglon()][T[posicion].getColumna()].EtiquetasInternas[pos_interna]
-				.setIcon(new ImageIcon(new ImageIcon(ruta).getImage().getScaledInstance(70, 70, Image.SCALE_DEFAULT)));
+				.setIcon(new ImageIcon(figura.getImage().getScaledInstance(70, 70, Image.SCALE_DEFAULT)));
 		// System.out.println("Algo salio mal");
 
 		// } catch (Exception e) {
@@ -240,7 +241,7 @@ class ThreadDemo implements Runnable {
 		try {
 			bDado.setEnabled(false);
 			// Verificar si a donde se va a mover el personaje esta detras o delante de mi
-			// !While para sacar todos los elementos del array list de jugador movimientos
+			// $ While para sacar todos los elementos del array list de jugador movimientos
 			System.out.println(nueva + " " + jugador.posicion);
 			// * La nueva posicion se encuentra delante de mi
 			// $ posible problema es que llegue con la pila vacia a este punto pero en
@@ -257,10 +258,9 @@ class ThreadDemo implements Runnable {
 
 				if (nueva >= jugador.posicion) {// avanzo hacia adelante
 					// System.out.println("IF 1:" + jugador.nombre + "Esta en la posicion" + vieja);
-					// JOptionPane.showMessageDialog(null,jugador.nombre+ " avanza a la posicion
-					// "+nueva, "",
-					// JOptionPane.INFORMATION_MESSAGE, new ImageIcon(jugador.ruta));
-					System.out.println(jugador.nombre + " avanza a la posicion " + nueva);
+					JOptionPane.showMessageDialog(null, jugador.nombre + " avanza a la posicion " + nueva, "",
+							JOptionPane.INFORMATION_MESSAGE, new ImageIcon(jugador.ruta));
+					// System.out.println(jugador.nombre + " avanza a la posicion " + nueva);
 
 					while (jugador.posicion < nueva) {
 						// System.out.println("IF 1: " + jugador.nombre + " Esta en la posicion " +
@@ -276,17 +276,13 @@ class ThreadDemo implements Runnable {
 					// jugador.posicion);
 				} else if (nueva < jugador.posicion) {
 					// System.out.println("IF 1:" + jugador.nombre + "Esta en la posicion" + vieja);
-					// JOptionPane.showMessageDialog(null,jugador.nombre+ " retrocede a la posicion
-					// "+nueva, "",
-					// JOptionPane.INFORMATION_MESSAGE, new ImageIcon(jugador.ruta));
-					System.out.println(jugador.nombre + " retrocede a la posicion " + nueva);
+					JOptionPane.showMessageDialog(null, jugador.nombre + " retrocede a la posicion " + nueva, "",
+							JOptionPane.INFORMATION_MESSAGE, new ImageIcon(jugador.ruta));
 
 					// * La nueva posicion se encuentra detras de mi
 					// ! Por alguna razon esto funciona con valores negativos
 					while (jugador.posicion > nueva) {
 						MoverAtras(jugador.posicion);
-						// System.out.println(jugador.nombre + " se encuentra en la posicion " +
-						// jugador.posicion);
 						jugador.posicion--;
 						Thread.sleep(500);
 					}
@@ -312,6 +308,7 @@ class ThreadDemo implements Runnable {
 				// movimientos que hay en el vector movimientos
 
 				// multiples movimientos que pueda tener un jugador
+
 			}
 			if (jugador.posicion == 30) {
 				bDado.setEnabled(false);
@@ -340,10 +337,15 @@ class ThreadDemo implements Runnable {
 		// Limpia la casilla anterior (i-1) si avanza y se encuentra en la posicion
 		// numero 1 entonces no necesita limpiar la casilla anterior
 		// try {
+		if (T[jugador.posicion].r % 2 == 0)
+			jugador.ActualizarFigura("D");
+		else
+			jugador.ActualizarFigura("I");
 		if (i > 1) {
 			jugador.SetImageJugadorBeforeNull();
 
 		}
+
 		jugador.SetImageJugador();
 		// } catch (Exception e) {
 		// //TODO: handle exception
@@ -354,51 +356,15 @@ class ThreadDemo implements Runnable {
 	public void MoverAtras(int i) {
 		// Limpia la casilla anterior (i+1) si retrocedde y se encuentra en la posicion
 		// numero 30 entonces no necesita limpiar la casilla siguiente
+
+		if (T[jugador.posicion].r % 2 == 0)
+			jugador.ActualizarFigura("D");
+		else
+			jugador.ActualizarFigura("I");
 		if (i < 30) {
 			jugador.SetImageJugadorAfterNull();
 		}
 
 		jugador.SetImageJugador();
 	}
-}
-
-class ThreadWait implements Runnable {
-
-	int nueva;
-	// int posicion;
-	ImageIcon figura;
-	vector_Etiqueta[][] vEti;
-	defTablero[] T;
-	JButton bDado;
-	Jugador jugador;
-
-	public ThreadWait(int posicion, int nueva, ImageIcon figura, vector_Etiqueta[][] vEti, defTablero[] T,
-			JButton bDado, Jugador jugador) {
-		// System.out.println("Entro a jugador " + jugador.nombre);
-		this.nueva = nueva;
-		// this.posicion = posicion;
-		this.figura = figura;
-		this.vEti = vEti;
-		this.T = T;
-		this.bDado = bDado;
-		this.jugador = jugador;
-
-	}
-
-	synchronized public void run() {
-		try {
-
-			while (!jugador.movimientos.isEmpty()) {
-				System.out.println("empieza la ejecucion de threadwait");
-
-				System.out.println("Sigue la ejecucion de threadwait");
-			}
-
-		} catch (Exception e) {
-			System.out.println(e);
-			System.out.println(e.getStackTrace()[0].getLineNumber());
-
-		}
-	}
-
 }

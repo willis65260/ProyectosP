@@ -34,8 +34,9 @@ public class Instrucciones implements ActionListener {
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 516, 341);
-		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
+		frame.setLocationRelativeTo(null);
 
 		btnRegresar = new JButton("REGRESAR");
 		btnRegresar.setForeground(Color.WHITE);
