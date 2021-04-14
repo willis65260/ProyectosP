@@ -14,9 +14,9 @@ function App() {
 
   const [Elem, setElem] = useState(<DatosUsuario imagen={"no hay usuario"} fotografia={"no hay usuario"} documento={"no hay usuario"} />);
 
-  function clickHandlerFuntion (text) {
+  function clickHandlerFuntion (text,imagen,fotografias,descripcion) {
     console.log("Se ha actualizado el usuario");
-    setElem(<DatosUsuario usuario={text} imagen={"no hay imagen"} fotografia={"no hay fotografia"} documento={"no hay documento"} />)
+    setElem(<DatosUsuario usuario={text} imagen={imagen} fotografia={fotografias} documento={descripcion} />)
     
 
   }

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="mostrar-colores">
+
+    </div>
+    <div id="h5-con-clases">
+
+    </div>
+    <script>
+        var color = [];
+        var palabras = [
+            "ave",
+            "arc",
+            "app",
+            "alt",
+            "ada",
+            "att",
+            "ami",
+            "avn",
+            "amy",
+            "act",
+            "avo",
+            "apr",
+            "asa",
+            "ara",
+            "ane",
+            "ant",
+            "aid",
+            "ace",
+            "alk",
+            "ava",
+            "avg",
+            "agt",
+            "ate",
+            "ass",
+            "air",
+            "aby",
+            "apa",
+            "ain",
+            "amu",
+            "aym",
+            "ala",
+            "abb",
+            "aim",
+            "ave",
+            "apt",
+            "arm",
+            "air",
+            "ash",
+            "abb",
+            "and",
+            "auk",
+            "aso",
+            "azo",
+            "ana",
+            "aux",
+            "adz",
+            "axe",
+            "asp",
+            "any",
+            "adj",
+            "ain",
+            "aet",
+            "ari",
+            "ali",
+            "awl",
+            "aba",
+            "add",
+            "ard",
+            "aye",
+            "ani",
+            "ann",
+            "aba",
+            "atm",
+            "ata",
+            "aob",
+            "avo",
+            "awe",
+            "adv",
+            "arr",
+            "ave",
+            "amp",
+            "ait",
+            "ail",
+            "awa",
+            "ale",
+            "anu",
+            "art",
+            "abo",
+            "apo",
+            "awn",
+            "are",
+            "ake",
+            "aft",
+            "ajo",
+            "ago",
+            "aff",
+            "all",
+            "alp",
+            "age",
+            "aug",
+            "amp",
+            "ais",
+            "ape",
+            "ana",
+            "ado",
+            "alb",
+            "ala",
+            "abo",
+            "aha",
+            "amt"
+        ]
+        var string=''
+        var h5=''
+
+        for (let i = 0; i < 250; i++) {
+            color[i] = '#' + Math.random().toString(16).substr(2, 6)
+        }
+        // .a {
+        //     background - color: aqua;
+        //     color: black;
+        // }
+
+        for (let i = 0; i < 100; i++) {
+            string += '.' + palabras[i] + '{'
+            string += 'background-color:' + color[i] + ';'
+            string += 'color:' + color[i + 1] + ';'
+            string += '}'
+        }
+
+        document.getElementById('mostrar-colores').innerText = string;
+        // h5-con-clases
+
+        for (let i = 0; i < 100; i++) {
+            h5 += '<h5 className="' + palabras[i] + '">\n'
+        }
+
+        document.getElementById('h5-con-clases').innerText = h5;
+
+        console.log(color);
+    </script>
+</body>
+
+</html>

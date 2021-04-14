@@ -32,31 +32,46 @@
     /* height: 30px; */
 }
 
-.background-tenue{
+.background-tenue {
     border: none;
     background-color: #f8f9fa;
 }
-.linea{
+
+.linea {
     position: relative;
     display: inline-block;
 }
-.link{
-    color:blue;
+
+.link {
+    color: blue;
     cursor: pointer;
 }
-.link:hover{
+
+.link:hover {
     text-decoration: underline;
 }
 
-.mex{
+.mex {
     background-color: #f8f9fa;
     border-bottom: 1px solid #dadce0;
     color: #7686a2;
 }
 
-.decorado{
+.decorado {
     cursor: pointer;
 }
-.decorado:hover{
+
+.decorado:hover {
     text-decoration: underline;
 }
+
+
+/* $ Empiezan los estilos nuevos*/
+
+Logo{
+    background-color: aqua;
+}
+.color-negro{
+    background-color: aqua;
+ }
+

@@ -11,13 +11,18 @@ import DerechosDeAutor from '../Footer/DerechosDeAutor';
 import MapaPagina from '../Cuerpo/MapaPagina';
 import Logo from '../Banner/Logo';
 import Contacto from '../Cuerpo/Contacto';
+import './CSS/estilos.css'
+
 
 
 
 
 function Pagina1() {
+
+   
     return (
         <div class=''>
+            
             <h4 class="text-center">www.princeton.edu</h4>
             <Header />
             <HeaderPost/>

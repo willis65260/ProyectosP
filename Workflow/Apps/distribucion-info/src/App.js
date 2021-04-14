@@ -20,6 +20,8 @@ import Pagina16 from './Componentes/Paginas/Pagina16';
 import Pagina17 from './Componentes/Paginas/Pagina17';
 import Pagina18 from './Componentes/Paginas/Pagina18';
 
+import './CSS/estilos.css'
+
 function App() {
 
   //TODO esto es para hacer que un valor se mantenga en los cookies 

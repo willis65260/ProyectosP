@@ -2,42 +2,36 @@ import React from 'react'
 // import './App.css';
 import './Estilos/calc.css'
 import Result from './components/Result';
-import Button from './components/Button';
+// import Button from './components/Button';
+import MathOperations from './components/MathOperations'
+import DeleteOperations from './components/DeleteOperations';
+import Numbers from './components/Numbers';
+
 
 function App() {
 
-  const clickHandlerFuntion = (text)=>{
-    console.log("el rexto recibido es :",text);
-  }
 
   return (
     <main>
       <div className="react-calculator">
-        <Result value={undefined}/>
-        <div className="numbers">
-          <Button text={"1"} clickHandler={clickHandlerFuntion}/>
-          <button>2</button>
-          <button>3</button>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button>0</button>
-        </div>
-        <div className="math-operations">
-          <button>-</button>
-          <button>+</button>
-          <button>*</button>
-          <button>/</button>
-          <button>=</button>
-        </div>
-        <div className="functions">
-          <button>clear</button>
-          <button>r</button>
-        </div>
-        
+
+        <Result value={undefined} />
+
+        <Numbers onClickNumber={
+          number=>{
+            console.log("El numero es ",number)
+          }
+        } />
+
+        <MathOperations
+          onClickOperation={(operation) => console.log("la operacion es ", operation)}
+          onClickEqual={operation => console.log("la operacion es ", operation)}
+        />
+        <DeleteOperations
+          onContentDelete={(operation) => console.log("la borradas es ", operation)}
+          onContentClerear={(operation) => console.log("la borrada es ", operation)}
+        />
+
       </div>
     </main>
   );

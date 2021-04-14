@@ -19,12 +19,9 @@ import PropTypes from 'prop-types'
 
 //TODO Aqui se hace un destructuring al momento de recibir el objeto
 const Result = ({ value, user, active }) => {
-    
-    console.log("El valor recibido es :" + value);
-    console.log("El usuario recibido es :" + user);
-    console.log("El usuario esta activo es :" + active);
-
-
+    // console.log("El valor recibido es :" + value);
+    // console.log("El usuario recibido es :" + user);
+    // console.log("El usuario esta activo es :" + active);
 
     return (
         <div className="result">

@@ -1,0 +1,574 @@
+.fondo-blanco {
+    background-color: white;
+    color: black;
+}
+
+.imagenes-padre {
+    position: relative;
+    overflow: hidden;
+}
+
+.imagen-hija {
+    position: relative;
+    left: -50px;
+    top: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+.tamano-buscar {
+    width: 527px;
+}
+
+.ta {
+    height: 35px;
+}
+
+.aux {
+    display: flex;
+    border: 1px solid #DDD;
+    border-radius: 20%;
+    border-radius: 2rem;
+    /* height: 30px; */
+}
+
+.background-tenue {
+    border: none;
+    background-color: #f8f9fa;
+}
+
+.linea {
+    position: relative;
+    display: inline-block;
+}
+
+.link {
+    color: blue;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.mex {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dadce0;
+    color: #7686a2;
+}
+
+.decorado {
+    cursor: pointer;
+}
+
+.decorado:hover {
+    text-decoration: underline;
+}
+
+/* $ Empiezan los estilos nuevos*/
+/* ! =========================================================================================== */
+/* ! =========================================================================================== */
+/* ! =========================================================================================== */
+/* ! =========================================================================================== */
+/* ! =========================================================================================== */
+/* $ Empiezan los estilos nuevos*/
+
+.ave {
+    background-color: #d0307a;
+    color: #cd69a3;
+}
+
+.arc {
+    background-color: #cd69a3;
+    color: #af9bdb;
+}
+
+.app {
+    background-color: #af9bdb;
+    color: #6823bc;
+}
+
+.alt {
+    background-color: #6823bc;
+    color: #5dd2a7;
+}
+
+.ada {
+    background-color: #5dd2a7;
+    color: #4325f0;
+}
+
+.att {
+    background-color: #4325f0;
+    color: #5af898;
+}
+
+.ami {
+    background-color: #5af898;
+    color: #e45661;
+}
+
+.avn {
+    background-color: #e45661;
+    color: #a80ee8;
+}
+
+.amy {
+    background-color: #a80ee8;
+    color: #8d848d;
+}
+
+.act {
+    background-color: #8d848d;
+    color: #7c7198;
+}
+
+.avo {
+    background-color: #7c7198;
+    color: #f8ede6;
+}
+
+.apr {
+    background-color: #f8ede6;
+    color: #af7510;
+}
+
+.asa {
+    background-color: #af7510;
+    color: #692430;
+}
+
+.ara {
+    background-color: #692430;
+    color: #e94b42;
+}
+
+.ane {
+    background-color: #e94b42;
+    color: #2ea3bd;
+}
+
+.ant {
+    background-color: #2ea3bd;
+    color: #ffd15a;
+}
+
+.aid {
+    background-color: #ffd15a;
+    color: #376887;
+}
+
+.ace {
+    background-color: #376887;
+    color: #9f599c;
+}
+
+.alk {
+    background-color: #9f599c;
+    color: #cecbc6;
+}
+
+.ava {
+    background-color: #cecbc6;
+    color: #0f3600;
+}
+
+.avg {
+    background-color: #0f3600;
+    color: #e2ddfe;
+}
+
+.agt {
+    background-color: #e2ddfe;
+    color: #aaded0;
+}
+
+.ate {
+    background-color: #aaded0;
+    color: #6b8868;
+}
+
+.ass {
+    background-color: #6b8868;
+    color: #691b31;
+}
+
+.air {
+    background-color: #691b31;
+    color: #7f65e4;
+}
+
+.aby {
+    background-color: #7f65e4;
+    color: #afc315;
+}
+
+.apa {
+    background-color: #afc315;
+    color: #d946f0;
+}
+
+.ain {
+    background-color: #d946f0;
+    color: #f0ade7;
+}
+
+.amu {
+    background-color: #f0ade7;
+    color: #08aa9a;
+}
+
+.aym {
+    background-color: #08aa9a;
+    color: #52cde1;
+}
+
+.ala {
+    background-color: #52cde1;
+    color: #91c1df;
+}
+
+.abb {
+    background-color: #91c1df;
+    color: #440e15;
+}
+
+.aim {
+    background-color: #440e15;
+    color: #a5447a;
+}
+
+.ave {
+    background-color: #a5447a;
+    color: #e74b58;
+}
+
+.apt {
+    background-color: #e74b58;
+    color: #b34dc1;
+}
+
+.arm {
+    background-color: #b34dc1;
+    color: #245d3e;
+}
+
+.air {
+    background-color: #245d3e;
+    color: #df6abc;
+}
+
+.ash {
+    background-color: #df6abc;
+    color: #c9da5a;
+}
+
+.abb {
+    background-color: #c9da5a;
+    color: #4f81ec;
+}
+
+.and {
+    background-color: #4f81ec;
+    color: #c7acd6;
+}
+
+.auk {
+    background-color: #c7acd6;
+    color: #13f083;
+}
+
+.aso {
+    background-color: #13f083;
+    color: #db21d6;
+}
+
+.azo {
+    background-color: #db21d6;
+    color: #a03d02;
+}
+
+.ana {
+    background-color: #a03d02;
+    color: #dae7c9;
+}
+
+.aux {
+    background-color: #dae7c9;
+    color: #71b6ae;
+}
+
+.adz {
+    background-color: #71b6ae;
+    color: #7b59e7;
+}
+
+.axe {
+    background-color: #7b59e7;
+    color: #276c8a;
+}
+
+.asp {
+    background-color: #276c8a;
+    color: #e297fb;
+}
+
+.any {
+    background-color: #e297fb;
+    color: #e68dea;
+}
+
+.adj {
+    background-color: #e68dea;
+    color: #5fef6c;
+}
+
+.ain {
+    background-color: #5fef6c;
+    color: #a55ee4;
+}
+
+.aet {
+    background-color: #a55ee4;
+    color: #6a5197;
+}
+
+.ari {
+    background-color: #6a5197;
+    color: #3398db;
+}
+
+.ali {
+    background-color: #3398db;
+    color: #38129a;
+}
+
+.awl {
+    background-color: #38129a;
+    color: #2ffb1e;
+}
+
+.aba {
+    background-color: #2ffb1e;
+    color: #e1ff51;
+}
+
+.add {
+    background-color: #e1ff51;
+    color: #5b8821;
+}
+
+.ard {
+    background-color: #5b8821;
+    color: #8332c4;
+}
+
+.aye {
+    background-color: #8332c4;
+    color: #9858b8;
+}
+
+.ani {
+    background-color: #9858b8;
+    color: #31e9e6;
+}
+
+.ann {
+    background-color: #31e9e6;
+    color: #832510;
+}
+
+.aba {
+    background-color: #832510;
+    color: #72c051;
+}
+
+.atm {
+    background-color: #72c051;
+    color: #5e1c19;
+}
+
+.ata {
+    background-color: #5e1c19;
+    color: #d8a4a0;
+}
+
+.aob {
+    background-color: #d8a4a0;
+    color: #5e480d;
+}
+
+.avo {
+    background-color: #5e480d;
+    color: #21d3d7;
+}
+
+.awe {
+    background-color: #21d3d7;
+    color: #b69781;
+}
+
+.adv {
+    background-color: #b69781;
+    color: #db3e24;
+}
+
+.arr {
+    background-color: #db3e24;
+    color: #783ef0;
+}
+
+.ave {
+    background-color: #783ef0;
+    color: #81f48a;
+}
+
+.amp {
+    background-color: #81f48a;
+    color: #2a80d1;
+}
+
+.ait {
+    background-color: #2a80d1;
+    color: #d10cd8;
+}
+
+.ail {
+    background-color: #d10cd8;
+    color: #f26246;
+}
+
+.awa {
+    background-color: #f26246;
+    color: #6002f8;
+}
+
+.ale {
+    background-color: #6002f8;
+    color: #c7ba42;
+}
+
+.anu {
+    background-color: #c7ba42;
+    color: #0df693;
+}
+
+.art {
+    background-color: #0df693;
+    color: #12985f;
+}
+
+.abo {
+    background-color: #12985f;
+    color: #6eb88c;
+}
+
+.apo {
+    background-color: #6eb88c;
+    color: #4a30ce;
+}
+
+.awn {
+    background-color: #4a30ce;
+    color: #cb9f13;
+}
+
+.are {
+    background-color: #cb9f13;
+    color: #ea568a;
+}
+
+.ake {
+    background-color: #ea568a;
+    color: #d525b9;
+}
+
+.aft {
+    background-color: #d525b9;
+    color: #797b10;
+}
+
+.ajo {
+    background-color: #797b10;
+    color: #939dc4;
+}
+
+.ago {
+    background-color: #939dc4;
+    color: #71feb7;
+}
+
+.aff {
+    background-color: #71feb7;
+    color: #f683a0;
+}
+
+.all {
+    background-color: #f683a0;
+    color: #3b2973;
+}
+
+.alp {
+    background-color: #3b2973;
+    color: #b483bc;
+}
+
+.age {
+    background-color: #b483bc;
+    color: #646d8d;
+}
+
+.aug {
+    background-color: #646d8d;
+    color: #bbc536;
+}
+
+.amp {
+    background-color: #bbc536;
+    color: #bb4626;
+}
+
+.ais {
+    background-color: #bb4626;
+    color: #99b755;
+}
+
+.ape {
+    background-color: #99b755;
+    color: #364c16;
+}
+
+.ana {
+    background-color: #364c16;
+    color: #3edfdd;
+}
+
+.ado {
+    background-color: #3edfdd;
+    color: #72cb5a;
+}
+
+.alb {
+    background-color: #72cb5a;
+    color: #384b66;
+}
+
+.ala {
+    background-color: #384b66;
+    color: #87a2b3;
+}
+
+.abo {
+    background-color: #87a2b3;
+    color: #df3a98;
+}
+
+.aha {
+    background-color: #df3a98;
+    color: #164fe4;
+}
+
+.amt {
+    background-color: #164fe4;
+    color: #7e11ed;
+}
