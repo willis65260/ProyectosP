@@ -17,7 +17,8 @@ const Numbers = (props) => {
     return (
         <div className="numbers">
             {numbers.map(num => {
-                return <Button text={num.toString()} clickHandler={onClickNumber} />
+                //$Cada uno de estos botones debe de tener un key que es como un id, lo que hace que identifique cada uno como individual y se le asigna el objeto de lo que esta guardado en numbers
+                return <Button key={num} text={num.toString()} clickHandler={onClickNumber} />
             })}
         </div>
     )

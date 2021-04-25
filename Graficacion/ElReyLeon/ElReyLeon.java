@@ -79,7 +79,6 @@ public class ElReyLeon extends JPanel implements ActionListener {
                 OdioLasBanderas = true;
             }
         }
-
     }
 
     public int TirarDado() {

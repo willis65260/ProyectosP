@@ -5,7 +5,7 @@ import SalaConv from './Componets/SalaConv';
 
 import './Recursos/CSS/Bootstrap/css/bootstrapD.css'
 import './Recursos/CSS/estilos.css'
-  
+import "https://code.jquery.com/jquery-3.2.1.slim.min.js"
 
 
 

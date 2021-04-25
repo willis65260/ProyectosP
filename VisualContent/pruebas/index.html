@@ -15,6 +15,7 @@
     <div id="h5-con-clases">
 
     </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.2700079038054!2d-71.98270078517216!3d-13.519014490498439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd6743e1dc0df%3A0x8f62de2f4dbd4d1!2sUniversidad%20Nacional%20Diego%20Quispe%20Tito!5e0!3m2!1ses-419!2smx!4v1619177251345!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     <script>
         var color = [];
         var palabras = [
@@ -119,8 +120,8 @@
             "aha",
             "amt"
         ]
-        var string=''
-        var h5=''
+        var string = ''
+        var h5 = ''
 
         for (let i = 0; i < 250; i++) {
             color[i] = '#' + Math.random().toString(16).substr(2, 6)
@@ -136,7 +137,14 @@
             string += 'color:' + color[i + 1] + ';'
             string += '}'
         }
+        string += "\n"
+        string += "["
+        for (let a = 0; a < 30; a++) {
 
+            string += "'" + color[a] + "'"
+            string += ","
+        }
+        string += "]"
         document.getElementById('mostrar-colores').innerText = string;
         // h5-con-clases
 
