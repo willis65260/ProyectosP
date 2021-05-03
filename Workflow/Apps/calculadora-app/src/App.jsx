@@ -7,6 +7,8 @@ import Result from './components/Result';
 import MathOperations from './components/MathOperations'
 import DeleteOperations from './components/DeleteOperations';
 import Numbers from './components/Numbers';
+//importacion de lodash
+import words from 'lodash.words'
 
 
 

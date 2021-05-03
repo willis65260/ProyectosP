@@ -33,7 +33,6 @@ function setup() {
                     AButtonHasBeenPressed(jugador2, StringFromIdsObjects),
                     turno = 0,
                     SomeOneWon(0)
-
                 ) : (
                     alert("No puedes jugar alli la casilla ya esta llena")
                 )
@@ -86,7 +85,7 @@ function SomeOneWon(jugador) {
                 if (jugador2.indexOf(element[1]) != -1) {
                     if (jugador2.indexOf(element[2]) != -1) {
                         HaGanado(2)
-                        let actual = document.getElementById("puntos1").innerHTML
+                        let actual = document.getElementById("puntos2").innerHTML
                         document.getElementById("puntos2").innerHTML = parseInt(actual) + 1;
 
                         Limpiar()

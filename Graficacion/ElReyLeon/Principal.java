@@ -1,7 +1,6 @@
 package ElReyLeon;
 
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.BorderLayout;
@@ -26,16 +25,16 @@ public class Principal implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 
 		if (e.getSource() == btnNewButton) {// 1 Jugador
-			new ElReyLeon(1,frame);
+			new ElReyLeon(1, frame);
 		} else if (e.getSource() == btnJugadores) {// 2 Jugadores
-			new ElReyLeon(2,frame);
+			new ElReyLeon(2, frame);
 		} else if (e.getSource() == btnSalir) {
 			System.exit(0);
 		} else if (e.getSource() == btnAyuda) {
 			new Ayuda(frame);
 		} else if (e.getSource() == btnInstrucciones) {
 			new Instrucciones(frame);
-		}else{
+		} else {
 			System.out.println("Algo salio mal we");
 		}
 		frame.setVisible(false);
@@ -45,6 +44,8 @@ public class Principal implements ActionListener {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
+
+		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
