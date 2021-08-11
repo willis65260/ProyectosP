@@ -1,0 +1,1 @@
+maxTres x y z = max x (max y z)

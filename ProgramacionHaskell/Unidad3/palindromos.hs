@@ -1,0 +1,1 @@
+palin x = x == reverse x

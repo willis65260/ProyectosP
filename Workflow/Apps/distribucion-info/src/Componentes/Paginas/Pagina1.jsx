@@ -11,7 +11,7 @@ import DerechosDeAutor from '../Footer/DerechosDeAutor';
 import MapaPagina from '../Cuerpo/MapaPagina';
 import Logo from '../Banner/Logo';
 import Contacto from '../Cuerpo/Contacto';
-import './CSS/estilos.css'
+// import './CSS/estilos.css'
 
 
 

@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 import Button from './Button'
-
 export default function DeleteOperations({onContentClerear,onContentDelete}) {
     return (
         <section className="functions">
@@ -10,7 +9,6 @@ export default function DeleteOperations({onContentClerear,onContentDelete}) {
         </section>
     )
 }
-
 DeleteOperations.propTypes = {
     onContentClerear: PropTypes.func.isRequired,
     onContentDelete: PropTypes.func.isRequired

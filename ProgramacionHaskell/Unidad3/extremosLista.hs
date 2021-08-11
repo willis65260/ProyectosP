@@ -1,0 +1,1 @@
+extremos n x = take n x ++ drop (length x - n) x

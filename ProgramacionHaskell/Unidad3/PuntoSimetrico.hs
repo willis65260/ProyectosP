@@ -1,0 +1,1 @@
+simetricoH (x,y) = (x,-y)
